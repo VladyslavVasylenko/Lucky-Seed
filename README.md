@@ -1,2 +1,2 @@
-# Lucky-Seed
-Catalog TM Lucky Seed
+# Catalog-Seeds
+Catalog Seeds UA

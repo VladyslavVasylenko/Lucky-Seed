@@ -3,10 +3,25 @@
 const burger = document.querySelector(".burger");
 const headerList = document.querySelector(".nav-bar__list");
 
-burger.addEventListener( "click", () => {
-    headerList.classList.toggle("open");
+const toggleMenu = function() {
+  headerList.classList.toggle('open');
+}
+
+burger.addEventListener('click', function(e) {
+  e.stopPropagation();
+  toggleMenu();
+});
+
+document.addEventListener('click', function(e) {
+  const target = e.target;
+  const its_headerList = target == headerList || headerList.contains(target);
+  const its_burger = target == burger;
+  const headerList_is_active = headerList.classList.contains('open');
+  
+  if (!its_headerList && !its_burger && headerList_is_active) {
+    toggleMenu();
   }
-);
+});
 
 // Active
 let ulContainer = document.getElementById("active");
