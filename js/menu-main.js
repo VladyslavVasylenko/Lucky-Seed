@@ -1,12 +1,29 @@
 "use strict";
-const burgers = document.querySelector(".burger-main");
-const headerLists = document.querySelector(".nav-bar-main__list");
-const linkt = document.querySelectorAll(".nav-bar-main__link");
 
-burgers.addEventListener("click", () => {
-  headerLists.classList.toggle("opens");
-  linkt.forEach(link => {
-      link.classList.toggle("fade");
-    });
+const burgerMain = document.querySelector(".burger-main");
+const headerListMain = document.querySelector(".nav-bar-main__list");
+const closes = document.querySelector(".closes");
+
+const toggleMenuMain = function() {
+  headerListMain.classList.toggle('opens');
+}
+
+closes.onclick = function() {
+  headerListMain.classList.toggle('opens');
+}
+
+burgerMain.addEventListener('click', function(e) {
+  e.stopPropagation();
+  toggleMenuMain();
+});
+
+document.addEventListener('click', function(e) {
+  const target = e.target;
+  const its_headerListMain = target == headerListMain || headerListMain.contains(target);
+  const its_burgerMain = target == burgerMain;
+  const headerListMain_is_active = headerList.classList.contains('opens');
+  
+  if (!its_headerListMain && !its_burgerMain && headerListMain_is_active) {
+    toggleMenuMain();
   }
-);
+});

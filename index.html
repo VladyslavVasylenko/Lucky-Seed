@@ -4,23 +4,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
   <title>Catalog seeds</title>
 </head>
 <body class="main-conteiner">
-  <!-- <nav class="nav-bar-main">
+  <nav class="nav-bar-main">
     <div class="burger-main">
       <h1 class="nav-bar-main__title">Список каталогів інших гібридів</h1>
     </div>
 
     <ul class="nav-bar-main__list">
-      <li class="nav-bar-main__item"><a href="./index.html" class="nav-bar-main__link">Каталог насіння огірка</a></li>
-      <li class="nav-bar-main__item"><a href="./more.html" class="nav-bar-main__link">Каталог насіння кабачка</a></li>
-      <li class="nav-bar-main__item"><a href="#" class="nav-bar-main__link">Каталог насіння томату</a></li>
+      <li class="nav-bar-main__item">
+        <a href="./index.html" class="nav-bar-main__link actives">Каталог насіння огірка</a>
+      </li>
+      <li class="nav-bar-main__item">
+        <a href="./squash.html" class="nav-bar-main__link">Каталог насіння кабачка</a>
+      </li>
+      <!-- <li class="nav-bar-main__item"><a href="#" class="nav-bar-main__link">Каталог насіння томату</a></li>
       <li class="nav-bar-main__item"><a href="#" class="nav-bar-main__link">Каталог насіння капусти</a></li>
-      <li class="nav-bar-main__item"><a href="#" class="nav-bar-main__link">Каталог насіння цибулі</a></li>
+      <li class="nav-bar-main__item"><a href="#" class="nav-bar-main__link">Каталог насіння цибулі</a></li> -->
+      <div class="closes"><i class="fas fa-times"></i></div>
     </ul>
-  </nav> -->
+  </nav>
 
   <nav class="nav-bar">
     <div class="burger">
@@ -37,6 +43,7 @@
       <li class="nav-bar__item"><a href="#1911" class="nav-bar__link">PC 1911 F1</a></li>
       <li class="nav-bar__item"><a href="#2704" class="nav-bar__link">PC 2704 F1</a></li>
       <li class="nav-bar__item"><a href="#4115" class="nav-bar__link">PC 4115 F1</a></li>
+      <li class="nav-bar__item"><a href="#price" class="nav-bar__link">ПРАЙС</a></li>
     </ul>
   </nav>
 
@@ -91,13 +98,19 @@
 
     <div class="main-slide__item" id="2704">
       <div class="main-slide__item-conteiner">
-        <img class="image" src="./image/2704-min.jpg" alt="PC 2704 F1">
+        <img class="image" src="./image//2704.jpg" alt="PC 2704 F1">
       </div>
     </div>
 
     <div class="main-slide__item" id="4115">
       <div class="main-slide__item-conteiner">
         <img class="image" src="./image/4115-min.jpg" alt="PC 4115 F1">
+      </div>
+    </div>
+
+    <div class="main-slide__item" id="price">
+      <div class="main-slide__item-conteiner">
+        <img class="image" src="./image/TITULKA(2).jpg" alt="Price">
       </div>
     </div>
   </div>
@@ -107,72 +120,78 @@
     <div class="modal" id="modal">
       <div class="modal-content">
         <div class="modal-header">
-          <h2>Прайс на насіння партенокарпічних огірків <br> на сезон 2021 - 2022 рр.(грн з ПДВ)</h2>
+          <h2>Прайс на насіння партенокарпічних огірків <br> на сезон 2021 - 2022 р. (грн. з ПДВ)</h2>
         </div>
         <div class="modal-body">
           <table class="table">
             <tr>
               <th colspan="2" class="th">Назва гібриду</th>
-              <th class="th">Ціна за насіння &lpar; ціни вказані в гривнях &rpar;</th>
-              <th class="th">Ціна за 1кг &lpar; ціни вказані в гривнях &rpar;</th>
+              <th class="th">Ціна за 1 насіння</th>
+              <th class="th">Ціна за 1 кг.</th>
             </tr>
             <tr>
-              <td class="td">Огірок партенокарпічний 1802 F1</td>
+              <td class="td">Огірок партенокарпічний PC 1802 F1</td>
               <td  class="td"></td>
-              <td class="td">0,14</td>
-              <td class="td">5320</td>
+              <td class="td">15 коп.</td>
+              <td class="td">5320 грн.</td>
             </tr>
             <tr>
-              <td class="td">Огірок партенокарпічний 1901 F1</td>
+              <td class="td">Огірок партенокарпічний PC 1901 F1</td>
               <td  class="td"></td>
-              <td class="td">0,14</td>
-              <td class="td">5320</td>
+              <td class="td">15 коп.</td>
+              <td class="td">5040 грн.</td>
             </tr>
             <tr>
-              <td class="td">Огірок партенокарпічний 1904 F1</td>
+              <td class="td">Огірок партенокарпічний PC 1904 F1</td>
               <td  class="td"></td>
-              <td class="td">0,11</td>
-              <td class="td">4200</td>
+              <td class="td">12 коп.</td>
+              <td class="td">4200 грн.</td>
             </tr>
             <tr>
-              <td class="td">Огірок партенокарпічний 1906 F1</td>
+              <td class="td">Огірок партенокарпічний PC 1906 F1</td>
               <td  class="td"></td>
-              <td class="td">0,14</td>
-              <td class="td">5040</td>
+              <td class="td">15 коп.</td>
+              <td class="td">5040 грн.</td>
             </tr>
             <tr>
-              <td class="td">Огірок партенокарпічний 1907 F1</td>
+              <td class="td">Огірок партенокарпічний PC 1907 F1</td>
               <td  class="td"></td>
-              <td class="td">0,11</td>
-              <td class="td">4200</td>
+              <td class="td">12 коп.</td>
+              <td class="td">4200 грн.</td>
             </tr>
             <tr>
-              <td class="td">Огірок партенокарпічний 1909 F1</td>
+              <td class="td">Огірок партенокарпічний PC 1909 F1</td>
               <td  class="td"></td>
-              <td class="td">0,14</td>
-              <td class="td">5040</td>
+              <td class="td">15 коп.</td>
+              <td class="td">5040 грн.</td>
             </tr>
             <tr>
-              <td class="td">Огірок партенокарпічний 2704 F1</td>
+              <td class="td">Огірок партенокарпічний PC 1911 F1</td>
               <td  class="td"></td>
-              <td class="td">0,11</td>
-              <td class="td">4200</td>
+              <td class="td">12 коп.</td>
+              <td class="td">4200 грн.</td>
             </tr>
             <tr>
-              <td class="td">Огірок партенокарпічний 4115 F1</td>
+              <td class="td">Огірок партенокарпічний PC 2704 F1</td>
+              <td class="td"></td>
+              <td class="td">12 коп.</td>
+              <td class="td">4200 грн.</td>
+            </tr>
+            <tr>
+              <td class="td">Огірок партенокарпічний PC 4115 F1</td>
               <td  class="td"></td>
-              <td class="td">0,14</td>
-              <td class="td">5320</td>
+              <td class="td">15 коп.</td>
+              <td class="td">5320 грн.</td>
             </tr>
           </table>
           <p>
-            <a href="tel:+38(068)538-67-69" class="modal-tel">Для замовлення &#9742;</a>
+            <a href="tel:+38(099)249-14-60 " class="modal-tel">Для замовлення +38(099)249-14-60 <span class="icon-tel">&#9742;</span></a>
           </p>
           <p>
-            <a href="mailto:magdalinova.nata@gmail.com" class="modal-mailto">magdalinova.nata@gmail.com</a>
+            <a href="mailto:qualityseedsua@gmail.com" class="modal-mailto" target="blank">qualityseedsua@gmail.com</a>
           </p>
         </div>
-        <div class="closed">Closed</div>
+        <div class="closed"><i class="fas fa-times"></i></div>
       </div>
     </div>
   </div>
@@ -180,6 +199,7 @@
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="./slick/slick.min.js"></script>
   <script src="./js/modal-window.js"></script>
+  <script src="./js/menu-main.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/script.js"></script>
 </body>
